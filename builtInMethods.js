@@ -61,3 +61,18 @@ console.log(shelterCats.slice(0,5))
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+
+// ANSWER
+// The pop method is called on in the students variable, which stores the array "Adam, Cory, Deanna, Peggy"
+// The pop method has one clear purpose to remove the last element from the arry, return that element, and change the length of the array moving forward
+// The console.log statement prints the return value of the last element = "Peggy"
+var students = ['Adam', 'Cory', 'Deanna', 'Peggy']
+console.log(students.pop());
+
+//ANSWER
+// The push method is called on in the shoes variable which stores the array "running shoes, sandals, flats, heels"
+// The push method has one clear purpose to add specified elements to the end of the array and returns the new length
+// The console.log statement prints the return value of the entire shoe array after adding the new elements of "hiking boots and slide"
+var shoes = ['running shoes', 'sandals', 'flats', 'heels']
+shoes.push('hiking boots','slides')
+console.log(shoes)
