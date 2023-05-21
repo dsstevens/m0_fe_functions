@@ -9,7 +9,7 @@ function greeting(){
   }
   greeting();
   greeting();
-  var goodMorning = greeting()
+  var goodMorning = greeting();
   console.log(goodMorning);
 
 // 2: Write a function named customGreeting that returns a greeting WITH a specific name.
@@ -45,7 +45,7 @@ function square(product){
   console.log(statement + (Math.pow(5,2)));
   
   // I know that this isn't ideal for reusability but for now it satisfies the requirements. I would appreciate feedback about how best to make the 
-  // number within the code block dynamic.
+  // number within the interpolated code block dynamic.
   
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
@@ -61,3 +61,27 @@ checkStock(0, "Cheese");
 
 checkStock(1, "Salsa");
 // => "Salsa - running LOW"
+
+var coffee = 4;
+var tortillas = 3;
+var cheese = 0;
+var salsa = 1;
+
+function checkStock(ingredient){
+  
+  if (coffee >= 4) {
+    console.log("Coffee is stocked.");
+  }
+  if (tortillas <= 3){
+    console.log("Tortillas - running LOW");
+  }
+  if (cheese < 1) {
+    console.log("Cheese - OUT of stock!");
+  }                  
+  if (salsa < 2) {
+    console.log("Salsa - running LOW");
+  }
+}
+
+var breakfastTacos = checkStock();
+console.log(breakfastTacos);
