@@ -10,12 +10,20 @@
 
 
 "Hello World".includes("Hello");
-
+// The .includes() method is called on the string "Hello World"
+// No arguments are passed; .includes has one clear job to check if the string "Hello" is present in the first string "Hello World"
+// The return value is true since this is a boolean but there is no output because we have not asked the console to print
 
 "Hello World".endsWith("Hello");
+// The .endsWith() method is called on the string "Hello World"
+// No arguments are passed; .endsWith has one clear job to check if the string "Hello World" ends with the string in parentheses "Hello"
+// The return value is false since this method returns a boolean value but there is no output because we have not asked the console to print
 
 
 "Hello World".endsWith("rld");
+// The .endsWith method is called on the string "Hello World"
+// No arguments are passed; .endsWith has one clear job to check if the string "Hello World" ends with the string in parentheses "rld"
+// The return value is true since this method returns a boolean value but there is no output because we have not asked the console to print
 
 
 
