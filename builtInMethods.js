@@ -8,22 +8,22 @@
 // The return value is "hello world"
 "Hello World".toLowerCase();
 
-
-"Hello World".includes("Hello");
 // The .includes() method is called on the string "Hello World"
 // No arguments are passed; .includes has one clear job to check if the string "Hello" is present in the first string "Hello World"
 // The return value is true since this is a boolean but there is no output because we have not asked the console to print
+"Hello World".includes("Hello");
 
-"Hello World".endsWith("Hello");
 // The .endsWith() method is called on the string "Hello World"
 // No arguments are passed; .endsWith has one clear job to check if the string "Hello World" ends with the string in parentheses "Hello"
 // The return value is false since this method returns a boolean value but there is no output because we have not asked the console to print
+"Hello World".endsWith("Hello");
 
 
-"Hello World".endsWith("rld");
 // The .endsWith method is called on the string "Hello World"
 // No arguments are passed; .endsWith has one clear job to check if the string "Hello World" ends with the string in parentheses "rld"
 // The return value is true since this method returns a boolean value but there is no output because we have not asked the console to print
+"Hello World".endsWith("rld");
+
 
 
 
@@ -41,6 +41,19 @@
 var firstName = "Jeff";
 console.log(firstName.startsWith("J"));
 
+//ANSWER
+// The toUpperCase method is called on in the currentMonth variable, which stores the string object "May"
+// The startsWith method has one clear purpose to change the letters in the string to uppercase
+// The console.log() statement prints the return value of the toUpperCase method to the console
+var currentMonth = "May";
+console.log(currentMonth.toUpperCase());
+
+// ANSWER
+// The slice method is called on in the shelterCats variable, which stores the string object "Sassy, Figaro, Tom"
+// The slice method is employed to return a copy of a portion of a string or an array using index values as inidicated in the () 
+// The console.log() statement prints the return value of the indicated "slice" or section within the string without changing the original string
+var shelterCats = "Sassy, Figaro, Tom"
+console.log(shelterCats.slice(0,5))
 
 
 // SECTION 3: Calling methods on variables assigned to arrays.
