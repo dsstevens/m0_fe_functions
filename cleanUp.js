@@ -22,8 +22,11 @@ var sum = first + second + third
 return sum;
       }
 
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
+console.log(addThreeNums(1, 2, 3));
+console.log(addThreeNums(4, 2, 7));
+
+/* I added console.log() to both arguments at the end in 
+order to have a printed output */
 
 
 // EX 3:
