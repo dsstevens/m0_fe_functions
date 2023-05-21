@@ -49,10 +49,23 @@ in order to keep with convention, making it clearer where it ends.
 */
 
 //  EX 4:
-function average(num1, num2) 
-  {
+function average(num1, num2) {
 var sum = num1 + num2;
-    var avg = sum / 2;
+var avg = sum / 2;
 
-return avg
+return avg;
   }
+console.log(average(8,2));
+
+  /* Keeping with syntax convention, I moved the opening curly brackets 
+  up to line 52 and shifted 'var avg' on line 55 to be in line with 'var sum'.
+
+  And I'm assuming that we want to print out an output, so I gave this example
+  an argument to run by adding 'console.log' after the last curly bracket. 
+  I chose numbers as an example and put them in the parentheses in the argument
+  after invoking function we named 'average'
+  
+  Lastly, I cleaned up the line breaks with semicolons on line 56 and 58 */
+
+
+
