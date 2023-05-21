@@ -9,8 +9,8 @@ function greeting(){
   }
   greeting();
   greeting();
-  
-  console.log(greeting());
+  var goodMorning = greeting()
+  console.log(goodMorning);
 
 // 2: Write a function named customGreeting that returns a greeting WITH a specific name.
 
@@ -36,7 +36,17 @@ function greetPerson(name) {
 // 4: Write a function named square that takes in one number, and returns the square of that number.
 // BONUS: Print a sentence that interpolates the return value of your square function.
 
-
+function square(product){
+    return `The square of ${5} is `;
+  }
+  square();
+  square();
+  var statement = square()
+  console.log(statement + (Math.pow(5,2)));
+  
+  // I know that this isn't ideal for reusability but for now it satisfies the requirements. I would appreciate feedback about how best to make the 
+  // number within the code block dynamic.
+  
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
