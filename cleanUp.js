@@ -30,15 +30,23 @@ order to have a printed output */
 
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
+  console.log("Season");   
+ }
 
 makeFreshPesto();
+/* 
+I changed the term 'func' to 'function' which allows the interpreter
+to understand that the code block is referring to a function we are 
+naming as 'makeFreshPesto' 
 
+I also moved the closing curly bracket of the code block down to line 39
+in order to keep with convention, making it clearer where it ends.
+*/
 
 //  EX 4:
 function average(num1, num2) 
