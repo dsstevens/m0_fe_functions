@@ -10,7 +10,10 @@
 // EX 1:
 function askForName() { console.log("Hello, what is your name?") }
 
-askForName()
+askForName();
+
+/* Here, at the end of calling the function, I added a ';' 
+as best practice at the end. */
 
 
 // EX 2:
