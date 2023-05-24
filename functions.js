@@ -4,7 +4,7 @@
 // Use console.log() to see the return value in the console.
 
 // 1: Write a function named greeting that returns a string with a general greeting. 
-function greeting(){
+function greeting() {
     return "Good morning";
   }
   greeting();
@@ -14,38 +14,32 @@ function greeting(){
 
 // 2: Write a function named customGreeting that returns a greeting WITH a specific name.
 
-function customGreeting(name){
+ function customGreeting(name) {
     return `Good morning, ${name}!`;
-   }
- customGreeting();
- customGreeting();
+ }
+    customGreeting();
 var greeting = customGreeting("Deanna");
- console.log(greeting);
-  
+console.log(greeting);
 
 // 3: Write a function named greetPerson that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
-function greetPerson(name) {
-    return `My name is ${name}`;
-  }
-  greetPerson();
-  greetPerson();
-  var speaker = greetPerson("Deanna " + "Sofia " + "Stevens");
+var firstName = "Deanna ";
+var middleName = "Sofia ";
+var lastName = "Stevens";
+
+function greetPerson() {
+  return `My name is ${firstName + middleName + lastName}`;
+}
+  var speaker = greetPerson(firstName , middleName , lastName);
   
   console.log(speaker);
 
 // 4: Write a function named square that takes in one number, and returns the square of that number.
 // BONUS: Print a sentence that interpolates the return value of your square function.
 
-function square(product){
-    return `The square of ${5} is `;
-  }
-  square();
-  square();
-  var statement = square()
-  console.log(statement + (Math.pow(5,2)));
-  
-  // I know that this isn't ideal for reusability but for now it satisfies the requirements. I would appreciate feedback about how best to make the 
-  // number within the interpolated code block dynamic.
+function square(num) {
+  return num * num;
+}
+console.log(`The square of 5 is ${square(5)}`)
   
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
@@ -62,26 +56,26 @@ checkStock(0, "Cheese");
 checkStock(1, "Salsa");
 // => "Salsa - running LOW"
 
-var coffee = 4;
-var tortillas = 3;
-var cheese = 0;
-var salsa = 1;
-
-function checkStock(ingredient){
-  
-  if (coffee >= 4) {
-    console.log("Coffee is stocked.");
-  }
-  if (tortillas <= 3){
-    console.log("Tortillas - running LOW");
-  }
-  if (cheese < 1) {
-    console.log("Cheese - OUT of stock!");
-  }                  
-  if (salsa < 2) {
-    console.log("Salsa - running LOW");
-  }
+function checkStock(amount, item) {
+  if (amount >= 4) {
+    return (`${item} is stocked`)
 }
+  else if (amount > 0) {
+    return (`${item} is running LOW`)
+}
+  else {
+    return (`${item} is OUT of stock!`)
+};
+}
+console.log(checkStock(4, "Coffee"));
+// => "Coffee is stocked"
 
-var breakfastTacos = checkStock();
-console.log(breakfastTacos);
+console.log(checkStock(3, "Tortillas"));
+// => "Tortillas - running LOW"
+
+console.log(checkStock(0, "Cheese"));
+// => "Cheese - OUT of stock!"
+
+console.log(checkStock(1, "Salsa"));
+
+
