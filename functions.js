@@ -22,17 +22,19 @@ var greeting = customGreeting("Deanna");
 console.log(greeting);
 
 // 3: Write a function named greetPerson that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
-var firstName = "Deanna ";
-var middleName = "Sofia ";
-var lastName = "Stevens";
+// var firstName = "Deanna";
+// var middleName = "Sofia";
+// var lastName = "Stevens";
 
-function greetPerson() {
-  return `My name is ${firstName + middleName + lastName}`;
+function greetPerson(firstName, middleName, lastName) {
+  return `My name is ${firstName} ${middleName} ${lastName}`; 
 }
-  var speaker = greetPerson(firstName , middleName , lastName);
+  var speaker = greetPerson("Deanna","Sofia","Stevens");
+  var KVG = greetPerson("Kaitlyn","Marie","Van Gorkom")
   
   console.log(speaker);
-
+  console.log(KVG)
+  
 // 4: Write a function named square that takes in one number, and returns the square of that number.
 // BONUS: Print a sentence that interpolates the return value of your square function.
 
